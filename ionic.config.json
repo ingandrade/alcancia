@@ -1,5 +1,7 @@
 {
   "name": "alcancia",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
