@@ -24,3 +24,37 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+    --ion-color-coink-primary: #1eeb00;
+    --ion-color-coink-primary-rgb: 30,235,0;
+    --ion-color-coink-primary-contrast: #000000;
+    --ion-color-coink-primary-contrast-rgb: 0,0,0;
+    --ion-color-coink-primary-shade: #1acf00;
+    --ion-color-coink-primary-tint: #35ed1a;
+
+    --ion-color-coink-secundary: #004b40;
+    --ion-color-coink-secundary-rgb: 0,75,64;
+    --ion-color-coink-secundary-contrast: #ffffff;
+    --ion-color-coink-secundary-contrast-rgb: 255,255,255;
+    --ion-color-coink-secundary-shade: #004238;
+    --ion-color-coink-secundary-tint: #1a5d53;
+}
+
+.ion-color-coink-primary {
+    --ion-color-base: var(--ion-color-coink-primary);
+    --ion-color-base-rgb: var(--ion-color-coink-primary-rgb);
+    --ion-color-contrast: var(--ion-color-coink-primary-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-coink-primary-contrast-rgb);
+    --ion-color-shade: var(--ion-color-coink-primary-shade);
+    --ion-color-tint: var(--ion-color-coink-primary-tint);
+}
+
+.ion-color-coink-secundary {
+    --ion-color-base: var(--ion-color-coink-secundary);
+    --ion-color-base-rgb: var(--ion-color-coink-secundary-rgb);
+    --ion-color-contrast: var(--ion-color-coink-secundary-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-coink-secundary-contrast-rgb);
+    --ion-color-shade: var(--ion-color-coink-secundary-shade);
+    --ion-color-tint: var(--ion-color-coink-secundary-tint);
+}

@@ -16,9 +16,7 @@
 #container p {
   font-size: 16px;
   line-height: 22px;
-
   color: #8c8c8c;
-
   margin: 0;
 }
 
@@ -28,4 +26,37 @@
 
 ion-content ion-toolbar {
   --background: translucent;
+}
+
+.slide{
+  padding: 40px 0 40px 0;
+  
+}
+
+.slidehome{
+  margin: 10px 0 20px 0;
+  >h2 {
+    padding: 40px 0 40px 0;
+    color: #1eeb00;
+    font-size: large;
+  }
+  >small {
+    padding-bottom: 10px;
+  }
+}
+
+.swiper-slide img {
+  width: 150px !important ;
+  margin-top: 30px;
+}
+
+
+.coink-primary{
+  --background: #1eeb00;
+  --color: #004b40;
+}
+
+.coink-secundary{
+  --background: #004b40;
+  --color: #ffffff;
 }
