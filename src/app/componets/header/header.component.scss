@@ -3,6 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0;
     
     >li {
         display: inline-block;
@@ -20,7 +21,7 @@
         line-height: 30px;
         text-align: center;
         content: "";
-        margin: 0 auto;
+        // margin: 0 auto;
     }
 
     >li::after{
@@ -30,7 +31,7 @@
         background-color: #d7d7d7;
         position: absolute;
         top: 10px;
-        left: -30%;
+        left: -65%;
         
     }
     >li.active{
@@ -58,7 +59,7 @@
         margin-top: -17px;
         text-align: center;
         justify-content: center;
-        left: 35px;
+        left: 7px;
         position: absolute;
     }
 }
