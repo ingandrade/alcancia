@@ -4,10 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RegisterPageRoutingModule } from './register-routing.module';
+import { InfoDetailsPageRoutingModule } from './info-details-routing.module';
 
-import { RegisterPage } from './register.page';
-import { HeaderComponent } from '../componets/header/header.component';
+import { InfoDetailsPage } from './info-details.page';
 import { HeaderModule } from '../componets/header.module';
 
 @NgModule({
@@ -15,9 +14,9 @@ import { HeaderModule } from '../componets/header.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    RegisterPageRoutingModule,
+    InfoDetailsPageRoutingModule,
     HeaderModule
   ],
-  declarations: [RegisterPage]
+  declarations: [InfoDetailsPage]
 })
-export class RegisterPageModule {}
+export class InfoDetailsPageModule {}

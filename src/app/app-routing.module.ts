@@ -8,6 +8,26 @@ const routes: Routes = [
     path: 'register',
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
+  {
+    path: 'code',
+    loadChildren: () => import('./code/code.module').then( m => m.CodePageModule)
+  },
+  {
+    path: 'info',
+    loadChildren: () => import('./info/info.module').then( m => m.InfoPageModule)
+  },
+  {
+    path: 'info-details',
+    loadChildren: () => import('./info-details/info-details.module').then( m => m.InfoDetailsPageModule)
+  },
+  {
+    path: 'accountconfig',
+    loadChildren: () => import('./accountconfig/accountconfig.module').then( m => m.AccountconfigPageModule)
+  },
+  {
+    path: 'accountend',
+    loadChildren: () => import('./accountend/accountend.module').then( m => m.AccountendPageModule)
+  },
 ];
 
 @NgModule({

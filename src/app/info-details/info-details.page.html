@@ -1,0 +1,77 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text="" color="coink-primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title  class="ion-text-uppercase" color="coink-secundary" mode="ios">
+      datos de tu cuenta
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <app-header [tipo]="2"></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-grid>
+    <ion-row class="header-text">
+      <ion-col size="3">
+        <img src="../../assets/img/loader.png" height="90">
+      </ion-col>
+      <ion-col size="9">  
+        <div class="ion-text-uppercase text-bold" color="coink-secundary">Verifica tus datos</div>          
+        <p class="description">Estos son tus datos?......... Lorem ipsum </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+
+  <ion-grid>
+    <ion-row class="ion-padding-horizontal">
+      <ion-col size="12">
+        <label class="color-text-secundary">Primer Nombre</label>
+        <ion-text color="coink-secundary">
+          <h5 class="ion-no-margin">ALejandro</h5>
+        </ion-text>
+      </ion-col>
+
+      <ion-col size="12">
+        <label class="color-text-secundary">Segundo Nombre</label>
+        <ion-text color="coink-secundary">
+          <h5 class="ion-no-margin">ALejandro</h5>
+        </ion-text>
+      </ion-col>
+
+      <ion-col size="12">
+        <label class="color-text-secundary">Primer Apellido</label>
+        <ion-text color="coink-secundary">
+          <h5 class="ion-no-margin">ALejandro</h5>
+        </ion-text>
+      </ion-col>
+      
+      <ion-col size="12">
+        <label class="color-text-secundary"> Segundo Apellido</label>
+        <ion-text color="coink-secundary">
+          <h5 class="ion-no-margin">ALejandro</h5>
+        </ion-text>
+      </ion-col>
+
+      <ion-col size="12">
+        <label class="color-text-secundary">Género</label>
+        <ion-text color="coink-secundary">
+          <h5 class="ion-no-margin">ALejandro</h5>
+        </ion-text>
+      </ion-col>
+
+      <ion-col size="6" class="ion-margin-top">
+        <ion-button shape="round" expand="block" class="ion-no-margin" color="danger">Cancelar</ion-button>
+      </ion-col>
+
+      <ion-col size="6" class="ion-margin-top">
+        <ion-button shape="round" expand="block" class="ion-no-margin" color="coink-primary" routerLink="/accountconfig">Continuar</ion-button>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

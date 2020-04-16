@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { RegisterPageRoutingModule } from './register-routing.module';
+import { CodePageRoutingModule } from './code-routing.module';
 
-import { RegisterPage } from './register.page';
+import { CodePage } from './code.page';
 import { HeaderComponent } from '../componets/header/header.component';
 import { HeaderModule } from '../componets/header.module';
 
@@ -15,9 +15,9 @@ import { HeaderModule } from '../componets/header.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    RegisterPageRoutingModule,
+    CodePageRoutingModule,
     HeaderModule
   ],
-  declarations: [RegisterPage]
+  declarations: [CodePage]
 })
-export class RegisterPageModule {}
+export class CodePageModule {}

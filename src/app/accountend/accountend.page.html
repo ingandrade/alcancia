@@ -1,0 +1,56 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button mode="ios" text="" color="coink-primary"></ion-back-button>
+    </ion-buttons>
+    <ion-title  class="ion-text-uppercase" color="coink-secundary" mode="ios">
+      Autorización de datos
+    </ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <app-header [tipo]="4"></app-header>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-grid>
+    <ion-row class="header-text">
+      <ion-col size="3">
+        <img src="../../assets/img/security.png">
+      </ion-col>
+      <ion-col size="9">          
+        <div class="ion-text-uppercase text-bold" color="coink-secundary">configura tu cuenta</div>          
+        <p class="description">Para finalizar, por favor <ion-text color="coink-secundary">lee con detenimiento este documento</ion-text></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
+
+  <form >
+    <ion-list lines="full" class="ion-no-margin ion-no-padding ion-padding-horizontal">
+
+      <p class="description ion-padding-horizontal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At officia explicabo voluptatibus, vel nesciunt ipsam sapiente sed ratione, tempora quisquam voluptas fuga deleniti illum! Nulla explicabo aliquid minima maxime mollitia?. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi illum laborum consequuntur architecto nesciunt ex perspiciatis alias. Corporis unde alias sit. Voluptatum amet, velit quae quo culpa natus veniam similique!</p>
+
+      <ul class="description">
+        <li>hahd ajkdna dkjan kanda dkja dji daskjna a</li>
+        <li>hahd ajkdna dkjan kanda dkja dji daskjna a</li>
+        <li>hahd ajkdna dkjan kanda dkja dji daskjna a</li>
+        <li>hahd ajkdna dkjan kanda dkja dji daskjna a</li>        
+      </ul>
+
+      <p class="description ion-padding-horizontal">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At officia explicabo voluptatibus, vel nesciunt ipsam sapiente sed ratione, tempora quisquam voluptas fuga deleniti illum! Nulla explicabo aliquid minima maxime mollitia?. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi illum laborum consequuntur architecto nesciunt ex perspiciatis alias. Corporis unde alias sit. Voluptatum amet, velit quae quo culpa natus veniam similique!</p>
+
+      <ion-item no-lines>
+        <label class="term">
+          <ion-text color="dark">He leido, entendido y aceptado estos términos y condiciones</ion-text>
+        </label>        
+        <ion-checkbox color="coink-primary" mode="md"></ion-checkbox>
+      </ion-item>
+    </ion-list>
+
+    <div class="ion-padding btn-top">
+      <ion-button shape="round" expand="block" type="submit" class="ion-no-margin" color="coink-primary" routerLink="/accountend">Aceptar y finalizar</ion-button>
+    </div>
+  </form>
+
+</ion-content>

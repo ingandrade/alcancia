@@ -24,6 +24,7 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+@import "assets/core/generalcss.scss";
 
 :root {
     --ion-color-coink-primary: #1eeb00;
@@ -39,6 +40,20 @@
     --ion-color-coink-secundary-contrast-rgb: 255,255,255;
     --ion-color-coink-secundary-shade: #004238;
     --ion-color-coink-secundary-tint: #1a5d53;
+
+    --ion-color-inputtel: #d7d7d7;
+    --ion-color-inputtel-rgb: 215,215,215;
+    --ion-color-inputtel-contrast: #000000;
+    --ion-color-inputtel-contrast-rgb: 0,0,0;
+    --ion-color-inputtel-shade: #bdbdbd;
+    --ion-color-inputtel-tint: #dbdbdb;
+
+    --ion-color-text-secundary: #8D8B88;
+    --ion-color-text-secundary-rgb: 141,139,136;
+    --ion-color-text-secundary-contrast: #000000;
+    --ion-color-text-secundary-contrast-rgb: 0,0,0;
+    --ion-color-text-secundary-shade: #7c7a78;
+    --ion-color-text-secundary-tint: #989794;
 }
 
 .ion-color-coink-primary {
@@ -57,4 +72,22 @@
     --ion-color-contrast-rgb: var(--ion-color-coink-secundary-contrast-rgb);
     --ion-color-shade: var(--ion-color-coink-secundary-shade);
     --ion-color-tint: var(--ion-color-coink-secundary-tint);
+}
+
+.ion-color-inputtel {
+    --ion-color-base: var(--ion-color-inputtel);
+    --ion-color-base-rgb: var(--ion-color-inputtel-rgb);
+    --ion-color-contrast: var(--ion-color-inputtel-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-inputtel-contrast-rgb);
+    --ion-color-shade: var(--ion-color-inputtel-shade);
+    --ion-color-tint: var(--ion-color-inputtel-tint);
+}
+
+.ion-color-text-secundary {
+    --ion-color-base: var(--ion-color-text-secundary);
+    --ion-color-base-rgb: var(--ion-color-text-secundary-rgb);
+    --ion-color-contrast: var(--ion-color-text-secundary-contrast);
+    --ion-color-contrast-rgb: var(--ion-color-text-secundary-contrast-rgb);
+    --ion-color-shade: var(--ion-color-text-secundary-shade);
+    --ion-color-tint: var(--ion-color-text-secundary-tint);
 }
