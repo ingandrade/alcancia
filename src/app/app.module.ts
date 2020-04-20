@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { Keyboard } from '@ionic-native/keyboard/ngx';
 import { HeaderModule } from './componets/header.module';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,7 +19,9 @@ import { HeaderModule } from './componets/header.module';
     BrowserModule,
     IonicModule.forRoot(),
     AppRoutingModule,
-    HeaderModule
+    HeaderModule,
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [
     StatusBar,

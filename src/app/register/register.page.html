@@ -25,25 +25,26 @@
       </ion-col>
     </ion-row>
     <ion-row>
-      <ion-col class="ion-text-center">
-        <ion-item color="inputtel">
-          <ion-row>
-            <ion-col size="2" class="ion-align-self-center">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg" width="35">
-            </ion-col>
-            <ion-col size="2" class="ion-align-self-center">
-              <span> +57 </span>
-            </ion-col>
-            <ion-col>
-              <ion-input type="tel" pattern="[0-9]*" placeholder="(xxx - xxxx xxx)" inputmode="tel" maxlength="10" 
-                minlength="10" pattern="number" (window:keydown)="onKey($event)" mask="(xxx - xxxx xxx)" required>
-              </ion-input>
-
-            </ion-col>
-          </ion-row>
-        </ion-item>
-        
-      </ion-col>
+      <form [formGroup]="Phoneform" (ngSubmit)="onSubmit()"> 
+        <ion-col class="ion-text-center">
+          <ion-item color="inputtel">
+            <ion-row>
+              <ion-col size="2" class="ion-align-self-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Colombia.svg" width="35">
+              </ion-col>
+              <ion-col size="2" class="ion-align-self-center">
+                <span> +57 </span>
+              </ion-col>
+              <ion-col>
+                <ion-input type="tel" placeholder="(xxx - xxxx xxx)" inputmode="tel" maxlength="10" minlength="10" pattern="[0-9]*" 
+                  (ionChange)="inputClear($event)" FormControlName="phone_number">
+                </ion-input>
+              </ion-col>
+            </ion-row>
+          </ion-item>
+          
+        </ion-col>
+      </form>
     </ion-row>
   </ion-grid>  
   

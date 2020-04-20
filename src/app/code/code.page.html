@@ -25,23 +25,28 @@
     </ion-row>
     <ion-row>
       <ion-col class="ion-text-center">
-        <ion-item color="inputtel">
-          <ion-row>
-            <ion-col size="2" class="ion-align-self-center">
-              <img src="../../assets/img/Colombia.svg" width="35">
-            </ion-col>
-            <ion-col size="2" class="ion-align-self-center">
-              <span> +57 </span>
-            </ion-col>
-            <ion-col>
-              <ion-input type="tel" pattern="[0-9]*" placeholder="(xxx - xxxx xxx)" inputmode="tel" maxlength="10" 
-                minlength="10" pattern="number" (window:keydown)="onKey($event)" mask="(xxx - xxxx xxx)" required>
-              </ion-input>
+        <ion-list lines="none">
+          <ion-item color="inputtel">
+            <ion-row>
+              <ion-col class="ion-text-center">
 
+                <ion-input type="tel" pattern="[0-9]*" placeholder="x x x x" inputmode="tel" maxlength="4" 
+                  minlength="4" pattern="number" (window:keydown)="onKey($event)" required>
+                </ion-input>
+
+              </ion-col>
+            </ion-row>
+          </ion-item>
+
+          <ion-item>            
+            <ion-col size="12" class="ion-text-center">
+              <ion-button class="resed">
+                <ion-icon slot="start" name="reload-outline" color="coink-primary"></ion-icon>
+                Enviarme el código nuevamente
+              </ion-button>
             </ion-col>
-          </ion-row>
-        </ion-item>
-        
+          </ion-item>
+        </ion-list>        
       </ion-col>
     </ion-row>
   </ion-grid>  
